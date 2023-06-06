@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" id="smooth-content">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#skill" speed="clamp(0.8)">Skills</a></li>
+            <li><a href="#contact"data-speed="1.5">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text" >Portfolio<br><span>by Dooy</span></h2>
+        <a href="#about" id="btn" data-speed="clamp(0.5)" >About me</a>
+        <img src="img/4.png" class = "object" id="geometry"  alt="geometry">
+        <img src="img/3.png" class = "object" id="cat" alt="cat">
+    </section>
+
+    <div class="about" id="about" data-speed="clamp(0.5)" >
+        <h2 id="h2o">Hi, I'm Dooy</h2>
+        <p>ยังคิดไม่ออก</p>
+        <img src="img/5.png"  class = "object" id="dd" data-value ="-5" alt="">
+    </div>
+
+    <div class="skill" id="skill" data-speed="clamp(0.8)" >
+        
+        <h2 id="skH2">Skills&Experience<br><p>ใส่ไปงั้นแหละดูเท่เฉยๆ</p</h2>
+        <div class="php">
+            <img src="img/php.png"   alt="">
+            <img src="img/sql.png"   alt="">
+            <img src="img/bood.png"   alt="">
+            <img src="img/js.png"   alt=""> 
+            <img src="img/vs.png"   alt=""> 
+            <img src="img/css.png"   alt=""> 
+            <img src="img/html.png"   alt=""> 
+            <img src="img/ra.png"   alt=""> 
+    </div>
+    </div>
+
+
+<div id="contact" class="contact" data-speed="1.5" >
+    <h2>Contact</h2>
+    <img src="img/bg88.png" id="bg88" alt="">
+    <img src="img/bg89.png" id="bg89" alt="">
+    <img src="img/bg90.png" id="bg90" alt="">
+    <img src="img/bg91.png" id="bg91" alt="">
+</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+    let text = document.getElementById('text');
+    let geometry = document.getElementById('geometry');
+    let cat = document.getElementById('cat');
+    let btn = document.getElementById('btn');
+    let h2o = document.getElementById('h2o');
+    let dd = document.getElementById('dd');
+    let header = document.querySelector('header');
+    let skH2 = document.getElementById('skH2');
+    let bg90 = document.getElementById('bg90');
+    let bg88 = document.getElementById('bg88');
+    let bg89 = document.getElementById('bg89');
+    let php = document.getElementById('php');
+  
+
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    geometry.style.top = value * 0.50 + 'px';
+    cat.style.left = value * 0.10 + 'px';
+    dd.style.left = value * 0.10 + 'px';
+    text.style.marginTop = value * 0.80 + 'px';
+    btn.style.marginTop = value * 0.60 + 'px';
+    h2o.style.marginTop = value * 0.10 + 'px';
+    header.style.marginTop = value * 0.60 + 'px';
+    skH2.style.marginRight = value * 0.10 + 'px';
+    bg90.style.right = value * 0.10 + 'px';
+    bg88.style.marginLeft = value * 0.15 + 'px';
+    bg91.style.marginTop = value * 0.10 + 'px';
+    bg89.style.marginTop= value * -0.10 + 'px';
+    php.style.right= value *  1 + 'px';
+    
+})
+ </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Prompt:wght@300&display=swap');
+  </style>
+   </body>
+</html>
